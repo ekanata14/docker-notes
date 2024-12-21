@@ -55,4 +55,10 @@ Notes:
     -t : Psuedo-TTY terminal access
     /bin/bash : Example for the program we'd like to access inside the container
 
+### Docker Container Port
+You can port forward a docker container to be accessible in your computer. Create the port frowarding when creating a container.
+
+Create container with port forwarding:
+- docker container create --name examplename --publish 8080:80 packagename:latest
+
 
